@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use Paper-Writing-Hao in your research workflow, please cite this repository."
+title: "Paper-Writing-Hao"
+abstract: "A GitHub-native research paper writing system with agent-readable skills, venue rules, review workflows, template provenance, and reproducible LaTeX template validation."
+authors:
+  - name: "Hao"
+date-released: "2026-07-15"
+license: "MIT"
+repository-code: "https://github.com/Hao/Paper-Writing-Hao"
+keywords:
+  - academic writing
+  - research paper
+  - LaTeX
+  - ICLR
+  - NeurIPS
+  - CVPR
+  - ICML
+  - ECCV
+  - AAAI
+  - IEEE TMI
+  - AI agents

@@ -1,0 +1,24 @@
+venue: neurips
+year: 2026
+type: conference
+status: source_backed_stub
+last_checked: "2026-07-15"
+official_sources:
+  - title: NeurIPS 2026 CFP
+    url: https://neurips.cc/Conferences/2026/CallForPapers
+  - title: NeurIPS 2026 Main Track Handbook
+    url: https://neurips.cc/Conferences/2026/MainTrackHandbook
+template:
+  status: imported_checksummed_compile_pass
+  source: https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip
+page_limits:
+  content_pages: 9
+  references_count_toward_limit: false
+  appendix_count_toward_limit: false
+checks:
+  - id: anonymized_submission
+    severity: error
+    rule: no author-identifying material in anonymous submission
+  - id: checklist
+    severity: warning
+    rule: include official checklist when required

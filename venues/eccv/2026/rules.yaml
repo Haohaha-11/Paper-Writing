@@ -1,0 +1,21 @@
+venue: eccv
+year: 2026
+type: conference
+status: source_backed_stub
+last_checked: "2026-07-15"
+official_sources:
+  - title: ECCV 2026 Submission Policies
+    url: https://eccv.ecva.net/Conferences/2026/SubmissionPolicies
+template:
+  status: imported_checksummed_compile_pass
+  source: https://github.com/paolo-favaro/paper-template
+page_limits:
+  main_pages_including_figures_tables: 14
+  references_only_pages_after_limit: true
+checks:
+  - id: official_template
+    severity: error
+    rule: use official ECCV 2026 paper kit
+  - id: anonymized_submission
+    severity: error
+    rule: follow official anonymity policy

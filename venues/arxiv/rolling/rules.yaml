@@ -1,0 +1,29 @@
+venue: arxiv
+year: rolling
+type: preprint_platform
+status: source_backed_draft
+last_checked: "2026-07-15"
+official_sources:
+  - title: arXiv TeX submission help
+    url: https://info.arxiv.org/help/submit_tex.html
+template:
+  status: no_template
+checks:
+  - id: local_style_files
+    severity: error
+    rule: include local style, class, and macro files needed for compilation
+  - id: bibliography_files
+    severity: error
+    rule: include .bib and/or .bbl as required by submitted source
+  - id: clean_package
+    severity: warning
+    rule: remove hidden files, editor metadata, and build artifacts
+  - id: no_referee_mode
+    severity: error
+    rule: do not submit referee-mode source
+  - id: generated_artifacts
+    severity: warning
+    rule: include glossary, index, or generated files when required
+  - id: compile_from_package
+    severity: error
+    rule: exported package should compile independently

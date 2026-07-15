@@ -1,0 +1,50 @@
+venue: tmi
+year: rolling
+type: journal
+status: source_backed_draft
+last_checked: "2026-07-15"
+official_sources:
+  - title: IEEE TMI
+    url: https://ieeetmi.org/
+  - title: TMI Submission Checklist
+    url: https://ieeetmi.org/submission-checklist/
+template:
+  status: needs_exact_ieee_artifact
+  source: IEEE template selector linked from TMI author resources
+paper_types:
+  regular_or_special_issue_initial:
+    page_limit_including_references: 10
+  challenge_initial:
+    page_limit_including_references: 14
+file_limits:
+  initial_pdf_mb: 40
+checks:
+  - id: paper_type_selected
+    severity: error
+    rule: paper type must be known before page and package checks
+  - id: page_limit
+    severity: error
+    rule: apply page limit by paper type, including references
+  - id: pdf_size
+    severity: error
+    rule: initial PDF should be below 40 MB
+  - id: figures_tables_main_text
+    severity: warning
+    rule: figures and tables should be placed in the main text
+  - id: no_biographies
+    severity: error
+    rule: author biographies should not be included
+  - id: conference_extension
+    severity: error_if_applicable
+    rule: disclose, cite, describe extensions, and upload prior conference paper when applicable
+  - id: medical_privacy
+    severity: warning
+    rule: state privacy, consent, IRB, de-identification, or dataset access constraints where applicable
+  - id: validation_scope
+    severity: warning
+    rule: clinical/generalization claims must match validation protocol
+writing_priorities:
+  - dataset provenance
+  - validation protocol clarity
+  - scoped clinical claims
+  - limitations around deployment and generalization

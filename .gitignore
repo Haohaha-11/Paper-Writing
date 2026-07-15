@@ -1,0 +1,24 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*~
+
+# Local scratch/export outputs
+tmp/
+dist/
+build/
+exports/

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "iclr-2026",
+    "tex": "iclr2026_conference.tex",
+    "ok": true,
+    "pdf": true,
+    "returncode": 0,
+    "log_tail": "sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont\ns/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts\n/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr\n7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>\n</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/s\nhare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh\nare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/shar\ne/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/tex\nmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font\ns/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw\n/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p\nfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>\nOutput written on iclr2026_conference.pdf (7 pages, 200506 bytes).\nTranscript written on iclr2026_conference.log.\nLatexmk: Important warning:\n  (\\end occurred inside a group at level 1)\nLatexmk: Getting log file 'iclr2026_conference.log'\nLatexmk: Examining 'iclr2026_conference.fls'\nLatexmk: Examining 'iclr2026_conference.log'\nLatexmk: Found input bbl file 'iclr2026_conference.bbl'\nLatexmk: Log file says output to 'iclr2026_conference.pdf'\nLatexmk: Found bibliography file(s):\n  ./iclr2026_conference.bib\nLatexmk: All targets (iclr2026_conference.pdf) are up-to-date\n"
+  },
+  {
+    "name": "cvpr-2026",
+    "tex": "main.tex",
+    "ok": true,
+    "pdf": true,
+    "returncode": 0,
+    "log_tail": "s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type\n1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi\nc/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo\nnts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/\ncmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb\n></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr\n/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share\n/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm\n/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texl\nive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dis\nt/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type\n1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/\nutmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us\nr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>\nOutput written on main.pdf (5 pages, 214135 bytes).\nTranscript written on main.log.\nLatexmk: Getting log file 'main.log'\nLatexmk: Examining 'main.fls'\nLatexmk: Examining 'main.log'\nLatexmk: Found input bbl file 'main.bbl'\nLatexmk: Log file says output to 'main.pdf'\nLatexmk: Found bibliography file(s):\n  ./main.bib\nLatexmk: All targets (main.pdf) are up-to-date\n"
+  },
+  {
+    "name": "eccv-2026",
+    "tex": "main.tex",
+    "ok": true,
+    "pdf": true,
+    "returncode": 0,
+    "log_tail": "k> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </tmp/texfonts/pk/ljfou\nr/jknappen/ec/tcrm0900.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx0900.600\npk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </tmp/texfonts/pk/ljfo\nur/jknappen/ec/ecrm1000.600pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecss0800.52\n5pk> </tmp/texfonts/pk/ljfour/jknappen/ec/ecbx1440.600pk></usr/share/texlive/te\nxmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di\nst/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon\nts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type\n1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi\nc/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo\nnts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/\ncmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p\nfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us\nr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>\nOutput written on main.pdf (15 pages, 491441 bytes).\nTranscript written on main.log.\nLatexmk: Getting log file 'main.log'\nLatexmk: Examining 'main.fls'\nLatexmk: Examining 'main.log'\nLatexmk: Found input bbl file 'main.bbl'\nLatexmk: Log file says output to 'main.pdf'\nLatexmk: Found bibliography file(s):\n  ./main.bib\nLatexmk: All targets (main.pdf) are up-to-date\n"
+  },
+  {
+    "name": "neurips-2026",
+    "tex": "neurips_2026.tex",
+    "ok": true,
+    "pdf": true,
+    "returncode": 0,
+    "log_tail": "(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [1{/var/lib/texmf/fo\nnts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips\n/base/8r.enc}] [2] [3]\nUnderfull \\hbox (badness 3579) in paragraph at lines 359--360\n\\T1/cmtt/m/n/10 503 / why-[]is-[]preferable-[]to$[] \\T1/ptm/m/n/10 (+20) and []\n$\\T1/cmtt/m/n/10 https : / / tex . stackexchange . com / questions / 40492 /\n[4] [5] (./checklist.tex [6] [7] [8] [9] [10] [11]) [12] (./neurips_2026.aux) )\n(see the transcript file for additional information) </tmp/texfonts/pk/ljfour/j\nknappen/ec/ectt1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ams\nfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/\ncm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7\n.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><\n/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></\nusr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/te\nxlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis\nt/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u\nrw/times/utmri8a.pfb>\nOutput written on neurips_2026.pdf (12 pages, 151440 bytes).\nTranscript written on neurips_2026.log.\nLatexmk: Getting log file 'neurips_2026.log'\nLatexmk: Examining 'neurips_2026.fls'\nLatexmk: Examining 'neurips_2026.log'\nLatexmk: Log file says output to 'neurips_2026.pdf'\nLatexmk: All targets (neurips_2026.pdf) are up-to-date\n"
+  },
+  {
+    "name": "icml-2026",
+    "tex": "example_paper.tex",
+    "ok": true,
+    "pdf": true,
+    "returncode": 0,
+    "log_tail": "(see the transcript file for additional information)</usr/share/texlive/texmf-d\nist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo\nnts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ\ne1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ\nic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf\nonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/\ncmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.\npfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></\nusr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh\nare/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/t\nexmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts\n/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim\nes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>\n\nOutput written on example_paper.pdf (7 pages, 193508 bytes).\nTranscript written on example_paper.log.\nLatexmk: Getting log file 'example_paper.log'\nLatexmk: Examining 'example_paper.fls'\nLatexmk: Examining 'example_paper.log'\nLatexmk: Found input bbl file 'example_paper.bbl'\nLatexmk: Log file says output to 'example_paper.pdf'\nLatexmk: Found bibliography file(s):\n  ./example_paper.bib\nLatexmk: All targets (example_paper.pdf) are up-to-date\n"
+  },
+  {
+    "name": "tmi-ieeetran-minimal",
+    "tex": "main.tex",
+    "ok": true,
+    "pdf": true,
+    "returncode": 0,
+    "log_tail": "(./main.aux)\n-- Lines per column: 58 (exact).\n(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii\n[Loading MPS to PDF converter (version 2006.09.02).]\n) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty\n(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))\nUnderfull \\hbox (badness 2735) in paragraph at lines 18--20\n[]\\OT1/ptm/b/it/9 Index Terms\\OT1/ptm/b/n/9 ---Medical imag-ing, manuscript pre\npa-ra-tion,\n[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-\ndist/fonts/enc/dvips/base/8r.enc}] (./main.aux) )\n(see the transcript file for additional information)</usr/share/texlive/texmf-d\nist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo\nnts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ\ne1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/\ntimes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.p\nfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>\nOutput written on main.pdf (1 page, 62597 bytes).\nTranscript written on main.log.\nLatexmk: Getting log file 'main.log'\nLatexmk: Examining 'main.fls'\nLatexmk: Examining 'main.log'\nLatexmk: Log file says output to 'main.pdf'\nLatexmk: All targets (main.pdf) are up-to-date\n"
+  }
+]

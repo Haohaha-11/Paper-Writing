@@ -1,0 +1,18 @@
+venue: aaai
+year: 2026
+type: conference
+status: source_backed_stub
+last_checked: "2026-07-15"
+official_sources:
+  - title: AAAI-26 Author Policies
+    url: https://aaai.org/conference/aaai/aaai-26/policies-for-aaai-26-authors/
+template:
+  status: needs_exact_artifact_url
+  source: AAAI-26 Author Kit linked from official author policies
+checks:
+  - id: official_author_kit
+    severity: error
+    rule: use official AAAI-26 author kit
+  - id: ai_generated_text_policy
+    severity: error
+    rule: AI-generated paper text is prohibited except as an object of experimental analysis; editing author-written text is allowed under official policy

@@ -1,0 +1,32 @@
+venue: cvpr
+year: 2026
+type: conference
+status: source_backed_draft
+last_checked: "2026-07-15"
+official_sources:
+  - title: CVPR 2026 Author Guidelines
+    url: https://cvpr.thecvf.com/Conferences/2026/AuthorGuidelines
+  - title: CVPR Author Kit
+    url: https://github.com/cvpr-org/author-kit
+template:
+  status: imported_checksummed_compile_pass
+  source: https://github.com/cvpr-org/author-kit
+review:
+  anonymous: true
+checks:
+  - id: anonymized_submission
+    severity: error
+    rule: no author names, acknowledgments, affiliation clues, non-anonymous links, supplement leaks, or metadata
+  - id: visual_evidence
+    severity: warning
+    rule: central visual claims should be supported by figures, metrics, ablations, or human/reader studies when applicable
+  - id: baseline_recency
+    severity: warning
+    rule: compare against recent target-venue and adjacent-venue baselines
+  - id: supplement_anonymity
+    severity: error
+    rule: supplement must not reveal identity
+writing_priorities:
+  - self-contained figures and captions
+  - concrete experiment protocol
+  - strong related-work positioning against recent CV papers

@@ -1,0 +1,18 @@
+name: Validate repository
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate repository structure
+        run: python3 scripts/validate_repo.py
+
+      - name: Verify template checksums
+        run: sha256sum -c templates/checksums.sha256

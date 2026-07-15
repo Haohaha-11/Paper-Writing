@@ -1,0 +1,22 @@
+venue: icml
+year: 2026
+type: conference
+status: source_backed_stub
+last_checked: "2026-07-15"
+official_sources:
+  - title: ICML 2026 CFP
+    url: https://icml.cc/Conferences/2026/CallForPapers
+  - title: ICML 2026 Author Instructions
+    url: https://icml.cc/Conferences/2026/AuthorInstructions
+template:
+  status: imported_checksummed_compile_pass
+  source: https://media.icml.cc/Conferences/ICML2026/Styles/icml2026.zip
+page_limits:
+  main_body_pages: 8
+checks:
+  - id: latex_only
+    severity: error
+    rule: submission should use official LaTeX style
+  - id: anonymized_submission
+    severity: error
+    rule: no author-identifying material or non-anonymous URLs

@@ -1,0 +1,37 @@
+venue: iclr
+year: 2026
+type: conference
+status: source_backed_draft
+last_checked: "2026-07-15"
+official_sources:
+  - title: ICLR 2026 Author Guide
+    url: https://iclr.cc/Conferences/2026/AuthorGuide
+  - title: ICLR Master Template
+    url: https://github.com/ICLR/Master-Template
+template:
+  status: imported_checksummed_compile_pass
+  source: https://github.com/ICLR/Master-Template
+review:
+  anonymous: true
+page_limits:
+  submission_main_pages: 9
+  rebuttal_or_camera_ready_main_pages: 10
+  references_count_toward_limit: false
+  appendix_count_toward_limit: false
+checks:
+  - id: anonymized_submission
+    severity: error
+    rule: no author names, acknowledgments, affiliations, institution-identifying links, or metadata in anonymous submission
+  - id: page_limit
+    severity: error
+    rule: main text must fit the official page limit
+  - id: contribution_evidence
+    severity: warning
+    rule: each contribution in Introduction should map to method/result evidence
+  - id: llm_disclosure
+    severity: warning
+    rule: disclose significant LLM assistance when required by official policy
+writing_priorities:
+  - concise contribution bullets
+  - evidence-backed abstract claims
+  - clear limitations and reproducibility discussion

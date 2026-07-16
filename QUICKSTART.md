@@ -6,11 +6,19 @@ Use this repo as a paper-writing operating manual.
 
 1. Fill `examples/paper-context-template.md`.
 2. Read the target venue folder under `venues/`.
-3. Run the workflow in `workflows/draft-to-submission.md`.
-4. Use `skills/paper-strategist/SKILL.md`.
-5. Use `skills/novelty-scout/SKILL.md` before strong novelty claims.
-6. Use `skills/claim-evidence-auditor/SKILL.md` before abstract/introduction finalization.
-7. Use `skills/paper-redteam/SKILL.md` before submission.
+3. If the problem is still open, run `workflows/idea-to-paper.md`.
+4. If the problem is locked, run `workflows/draft-to-submission.md`.
+5. Use `skills/paper-strategist/SKILL.md`.
+6. Use `skills/novelty-scout/SKILL.md` before strong novelty claims.
+7. Use `skills/claim-evidence-auditor/SKILL.md` before abstract/introduction finalization.
+8. Use `skills/paper-redteam/SKILL.md` before submission.
+
+## Idea Development
+
+1. Fill `examples/frontier-problem-map-template.md` while running `skills/research-scout/SKILL.md`.
+2. Fill `examples/research-problem-framing-template.md` while running `skills/research-problem-framer/SKILL.md`.
+3. Fill `examples/falsification-sprint-template.md` while running `skills/pre-experiment-planner/SKILL.md`.
+4. Continue to `workflows/draft-to-submission.md` only after the problem survives falsification.
 
 ## Existing Draft
 

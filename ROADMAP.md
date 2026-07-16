@@ -25,6 +25,8 @@
 
 ## v0.3
 
+- Landed: idea-to-paper workflow covering latest/classic paper research, problem framing, pre-experiments, method design, experiments, and writing.
+- Landed: research scouting, research problem framing, and pre-experiment planning skills.
 - Compilable synthetic paper fixtures for at least ICLR, CVPR, and TMI.
 - Citation verification workflow with DOI/arXiv/OpenReview/Semantic Scholar cross-checks.
 - Official-source freshness checker for venue rules.

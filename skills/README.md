@@ -6,7 +6,15 @@ The v0.1 skills are original project-owned instructions distilled from the resea
 
 ## Recommended Order
 
-For a new paper:
+For idea development:
+
+1. `research-scout`
+2. `research-problem-framer`
+3. `pre-experiment-planner`
+4. `paper-strategist`
+5. `novelty-scout`
+
+For a new paper after the problem is locked:
 
 1. `paper-strategist`
 2. `novelty-scout`
@@ -43,10 +51,13 @@ For reviews/rebuttal:
 3. `claim-evidence-auditor` for disputed claims
 4. `page-compressor` for final response or camera-ready constraints
 
-## v0.1 Skill Pack
+## Skill Pack
 
 | Skill | Role | Status |
 |---|---|---|
+| `research-scout` | latest/classic paper mapping and frontier problem map | added v0.3 |
+| `research-problem-framer` | candidate scoring, contradiction framing, falsification sprint | added v0.3 |
+| `pre-experiment-planner` | small decisive diagnostics before method design | added v0.3 |
 | `paper-strategist` | paper thesis, contribution map, reviewer contract | deepened v0.1 |
 | `abstract-writer` | problem-gap-method-result-implication abstract | deepened v0.1 |
 | `introduction-writer` | paragraph roles, contribution framing, evidence preview | deepened v0.1 |

@@ -2,7 +2,14 @@
 
 Workflows compose skills and venue rules into repeatable paper-writing processes.
 
-Recommended order for a new paper:
+Recommended order from idea to paper:
+
+1. `idea-to-paper.md`
+2. `draft-to-submission.md`
+3. `venue-compliance-review.md`
+4. `pre-submission-review.md`
+
+Recommended order after the problem is already locked:
 
 1. `draft-to-submission.md`
 2. `full-paper-writing.md`

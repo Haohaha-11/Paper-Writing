@@ -57,6 +57,13 @@ This file tracks what has been landed in the GitHub-native version of the projec
 - [x] Added synthetic ICLR, CVPR, and TMI example walkthroughs.
 - [x] Updated skill and workflow indexes for the v0.2 path.
 
+## Landed In v0.3
+
+- [x] Added `research-scout` for latest/classic paper mapping and frontier problem maps.
+- [x] Added `research-problem-framer` based on the Research Problem Rubric and Templates.
+- [x] Added `pre-experiment-planner` for falsification sprints before method design.
+- [x] Added `idea-to-paper` workflow from literature research to problem focusing, pre-experiments, method design, experiments, and writing.
+
 ## Still Pending
 
 - [ ] License/redistribution review for copied template files.

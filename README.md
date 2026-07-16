@@ -8,11 +8,11 @@ It is not a one-click paper generator. The goal is to help researchers produce c
 
 ## What This Project Provides
 
-- Agent-readable writing skills for strategy, abstracts, introductions, related work, methods, experiments, results, discussion, limitations/ethics, conclusions, appendices, captions, evidence checks, reviewer simulation, novelty scouting, revision, compression, and rebuttal planning.
+- Agent-readable writing skills for research scouting, problem framing, pre-experiment planning, strategy, abstracts, introductions, related work, methods, experiments, results, discussion, limitations/ethics, conclusions, appendices, captions, evidence checks, reviewer simulation, novelty scouting, revision, compression, and rebuttal planning.
 - Venue rule folders for ICLR, CVPR, NeurIPS, ICML, ECCV, AAAI, IEEE TMI, and arXiv.
 - Imported and checksummed LaTeX templates for major ML/CV venues.
 - Real compile validation using TeX Live and `latexmk`.
-- Structured workflows for draft-to-submission writing, full-paper writing, section rewrites, venue compliance review, pre-submission review, rebuttal, camera-ready preparation, and arXiv export.
+- Structured workflows for idea-to-paper development, draft-to-submission writing, full-paper writing, section rewrites, venue compliance review, pre-submission review, rebuttal, camera-ready preparation, and arXiv export.
 - Reusable templates for paper context, claim-evidence matrices, review reports, rebuttal responses, and cspapers-assisted related-work checks.
 - Lightweight scripts for repository validation, LaTeX project scanning, and template smoke compilation.
 
@@ -42,11 +42,12 @@ For a new paper:
 
 1. Fill `examples/paper-context-template.md`.
 2. Read the target venue folder under `venues/`.
-3. Follow `workflows/draft-to-submission.md`.
-4. Use `skills/paper-strategist/SKILL.md` to define the paper thesis and contribution map.
-5. Use `skills/novelty-scout/SKILL.md` before making strong novelty claims.
-6. Use `skills/claim-evidence-auditor/SKILL.md` before finalizing the abstract and introduction.
-7. Use `skills/paper-redteam/SKILL.md` before submission.
+3. If the research problem is not locked, follow `workflows/idea-to-paper.md`.
+4. If the research problem is already locked, follow `workflows/draft-to-submission.md`.
+5. Use `skills/paper-strategist/SKILL.md` to define the paper thesis and contribution map.
+6. Use `skills/novelty-scout/SKILL.md` before making strong novelty claims.
+7. Use `skills/claim-evidence-auditor/SKILL.md` before finalizing the abstract and introduction.
+8. Use `skills/paper-redteam/SKILL.md` before submission.
 
 For an existing draft:
 
@@ -100,6 +101,9 @@ Paper-Writing-Hao/
 
 ## Key Skills
 
+- `research-scout`: latest/classic paper mapping and frontier problem map.
+- `research-problem-framer`: candidate scoring, contradiction framing, novelty boundary, and falsification sprint.
+- `pre-experiment-planner`: decisive pre-experiments before method design.
 - `paper-strategist`: paper thesis, contribution map, section plan.
 - `abstract-writer`: evidence-grounded abstract drafting and revision.
 - `introduction-writer`: motivation, gap, insight, and contribution framing.

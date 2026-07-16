@@ -6,7 +6,7 @@ Use this repo as a paper-writing operating manual.
 
 1. Fill `examples/paper-context-template.md`.
 2. Read the target venue folder under `venues/`.
-3. Run the workflow in `workflows/full-paper-writing.md`.
+3. Run the workflow in `workflows/draft-to-submission.md`.
 4. Use `skills/paper-strategist/SKILL.md`.
 5. Use `skills/novelty-scout/SKILL.md` before strong novelty claims.
 6. Use `skills/claim-evidence-auditor/SKILL.md` before abstract/introduction finalization.
@@ -16,9 +16,17 @@ Use this repo as a paper-writing operating manual.
 
 1. Fill any missing context in `examples/paper-context-template.md`.
 2. Select the target venue checklist.
-3. Run `workflows/pre-submission-review.md`.
+3. Run `workflows/review-existing-draft.md`.
 4. Apply section-specific skills from `skills/`.
 5. Record unresolved risks in the review report.
+
+## Local Private Projects
+
+1. Put real unpublished paper projects under `projects/<paper-name>/`.
+2. Keep `projects/` contents local; this repository ignores real project files by default.
+3. Copy `examples/paper-context-template.md` into the local project.
+4. Run `scripts/extract_latex_context.py projects/<paper-name>` before asking an agent to inspect a LaTeX draft.
+5. Move only synthetic, sanitized examples into `examples/` for public sharing.
 
 ## Rebuttal
 

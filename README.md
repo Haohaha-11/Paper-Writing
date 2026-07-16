@@ -77,6 +77,7 @@ Paper-Writing-Hao/
   workflows/                # End-to-end writing and review workflows
   templates/                # Imported templates, checksums, provenance records
   examples/                 # Reusable paper/review/rebuttal artifacts
+  projects/                 # Local/private paper projects; ignored by default
   docs/                     # Design notes and research records
 ```
 
@@ -151,6 +152,7 @@ This project handles unpublished research material. Use it carefully.
 - Do not claim official venue compliance without checking the relevant venue source.
 - Do not silently update official templates in existing paper projects.
 - Do not treat search relevance as a review score or acceptance predictor.
+- Put real paper projects under `projects/` only for local work. The directory ignores real project contents by default; see `projects/README.md`.
 
 ## Roadmap
 

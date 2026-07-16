@@ -23,3 +23,8 @@ dist/
 build/
 exports/
 templates/compile-logs/
+
+# Local/private paper projects. Keep only the public guidance files.
+projects/*
+!projects/README.md
+!projects/.gitkeep

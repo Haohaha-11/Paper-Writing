@@ -21,3 +21,12 @@ This directory records template provenance and import policy. It should not beco
 - `checksums.sha256`: sha256 for imported files.
 - `compile-validation.md`: template compile verification results.
 - `upstream/`: imported pristine upstream template files.
+
+## Local Checks
+
+```bash
+sha256sum -c templates/checksums.sha256
+python3 scripts/compile_templates.py --check
+```
+
+The compile script works from temporary copies and should not modify imported upstream template files.

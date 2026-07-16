@@ -1,6 +1,6 @@
 # Implementation Status
 
-Last updated: 2026-07-15
+Last updated: 2026-07-16
 
 This file tracks what has been landed in the GitHub-native version of the project.
 
@@ -47,16 +47,26 @@ This file tracks what has been landed in the GitHub-native version of the projec
 - [x] Added repository validation script and GitHub Actions workflow.
 - [x] Added synthetic toy paper walkthrough under `examples/toy_ml_paper/`.
 
+## Landed In v0.2
+
+- [x] Added full section-writing skills: Methods, Experiments, Results, Discussion, Limitations/Ethics, Conclusion, Appendix, Figure/Table Captions, and Revision Editing.
+- [x] Added `draft-to-submission`, `review-existing-draft`, and `venue-compliance-review` workflows.
+- [x] Added LaTeX project scanner prototype: `scripts/extract_latex_context.py`.
+- [x] Added template smoke compile script: `scripts/compile_templates.py`.
+- [x] Added manual GitHub Actions workflow for template smoke compilation.
+- [x] Added synthetic ICLR, CVPR, and TMI example walkthroughs.
+- [x] Updated skill and workflow indexes for the v0.2 path.
+
 ## Still Pending
 
 - [ ] License/redistribution review for copied template files.
 - [ ] AAAI-26 author kit import; official `https://aaai.org/authorkit26/` returned Cloudflare error in this environment.
 - [ ] Exact official IEEE/TMI template selector artifact import; current TMI validation uses TeX Live IEEEtran.
 - [ ] More detailed venue rules for NeurIPS, ICML, ECCV, and AAAI.
-- [ ] Full section-writing skills for Methods, Experiments, Results, Discussion, Limitations, Ethics, and Appendix.
 - [ ] More concrete examples filled with sample paper content.
-- [ ] Optional GitHub Actions workflow for LaTeX compilation.
+- [ ] Citation verification and official-source freshness checking.
+- [ ] More realistic end-to-end paper fixtures with compilable synthetic LaTeX.
 
 ## Current Rule
 
-v0.1 remains document-first. Do not add CLI/package scaffolding unless the project direction changes.
+The project remains document-first. Do not add CLI/package scaffolding unless the project direction changes.

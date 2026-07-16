@@ -8,18 +8,19 @@ It is not a one-click paper generator. The goal is to help researchers produce c
 
 ## What This Project Provides
 
-- Deepened agent-readable writing skills for strategy, abstracts, introductions, related work, evidence checks, reviewer simulation, novelty scouting, compression, and rebuttal planning.
+- Agent-readable writing skills for strategy, abstracts, introductions, related work, methods, experiments, results, discussion, limitations/ethics, conclusions, appendices, captions, evidence checks, reviewer simulation, novelty scouting, revision, compression, and rebuttal planning.
 - Venue rule folders for ICLR, CVPR, NeurIPS, ICML, ECCV, AAAI, IEEE TMI, and arXiv.
 - Imported and checksummed LaTeX templates for major ML/CV venues.
 - Real compile validation using TeX Live and `latexmk`.
-- Structured workflows for full-paper writing, section rewrites, pre-submission review, rebuttal, camera-ready preparation, and arXiv export.
+- Structured workflows for draft-to-submission writing, full-paper writing, section rewrites, venue compliance review, pre-submission review, rebuttal, camera-ready preparation, and arXiv export.
 - Reusable templates for paper context, claim-evidence matrices, review reports, rebuttal responses, and cspapers-assisted related-work checks.
+- Lightweight scripts for repository validation, LaTeX project scanning, and template smoke compilation.
 
 ## Current Status
 
 This repository is document-first. It is designed to be read and executed by humans, Claude Code, Codex, Cursor, ChatGPT, or similar coding/research agents.
 
-There is no CLI or web app in v0.1. That is intentional.
+There is no CLI or web app. The project is a GitHub-native knowledge base and workflow pack by design.
 
 Verified locally on 2026-07-15:
 
@@ -41,7 +42,7 @@ For a new paper:
 
 1. Fill `examples/paper-context-template.md`.
 2. Read the target venue folder under `venues/`.
-3. Follow `workflows/full-paper-writing.md`.
+3. Follow `workflows/draft-to-submission.md`.
 4. Use `skills/paper-strategist/SKILL.md` to define the paper thesis and contribution map.
 5. Use `skills/novelty-scout/SKILL.md` before making strong novelty claims.
 6. Use `skills/claim-evidence-auditor/SKILL.md` before finalizing the abstract and introduction.
@@ -51,11 +52,16 @@ For an existing draft:
 
 1. Fill missing facts in `examples/paper-context-template.md`.
 2. Select the venue checklist.
-3. Follow `workflows/pre-submission-review.md`.
+3. Follow `workflows/review-existing-draft.md`.
 4. Apply the relevant skills from `skills/`.
 5. Record unresolved risks in `examples/review-report-template.md`.
 
-For a complete synthetic walkthrough, see `examples/toy_ml_paper/`.
+For synthetic walkthroughs, see:
+
+- `examples/toy_ml_paper/`
+- `examples/toy_iclr_paper/`
+- `examples/toy_cvpr_paper/`
+- `examples/toy_tmi_paper/`
 
 ## Repository Map
 
@@ -97,9 +103,18 @@ Paper-Writing-Hao/
 - `abstract-writer`: evidence-grounded abstract drafting and revision.
 - `introduction-writer`: motivation, gap, insight, and contribution framing.
 - `related-work-writer`: citation-grounded positioning.
+- `method-writer`: method structure, notation, algorithms, and mechanism clarity.
+- `experiments-writer`: setup, datasets, baselines, metrics, and reproducibility.
+- `results-writer`: result narrative, ablations, robustness, and evidence claims.
+- `discussion-writer`: evidence-bounded interpretation and implications.
+- `limitations-ethics-writer`: limitations, broader impact, privacy, and deployment boundaries.
+- `conclusion-writer`: concise contribution recap and future-work boundaries.
+- `appendix-writer`: appendix structure and supplement hygiene.
+- `figure-caption-writer`: evidence-grounded captions for figures and tables.
 - `claim-evidence-auditor`: claim-to-evidence matrix.
 - `paper-redteam`: simulated reviewer and AC review.
 - `novelty-scout`: related-work and novelty risk search, including cspapers-assisted checks.
+- `revision-editor`: ranked revision plan after review or audit.
 - `page-compressor`: length reduction while preserving LaTeX and evidence.
 - `rebuttal-planner`: response strategy and revision planning.
 
@@ -118,6 +133,15 @@ Important metadata:
 
 The local validation environment uses Ubuntu 24.04, TeX Live 2023/Debian, and `latexmk` 4.83. See `docs/tex-environment.md`.
 
+Useful checks:
+
+```bash
+python3 scripts/validate_repo.py
+sha256sum -c templates/checksums.sha256
+python3 scripts/extract_latex_context.py templates/upstream/iclr/2026
+python3 scripts/compile_templates.py --check
+```
+
 ## Safety And Scope
 
 This project handles unpublished research material. Use it carefully.
@@ -134,9 +158,8 @@ Near-term work:
 
 - finish AAAI-26 template import once an accessible official artifact is available;
 - import exact IEEE/TMI template selector artifacts;
-- expand method, experiments, results, limitations, ethics, and appendix skills;
 - add more filled examples using synthetic toy papers;
-- expand validation scripts for link checking and template compilation.
+- expand citation verification and official-source freshness checks.
 
 See `ROADMAP.md`.
 

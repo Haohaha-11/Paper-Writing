@@ -13,9 +13,18 @@ For a new paper:
 3. `abstract-writer`
 4. `introduction-writer`
 5. `related-work-writer`
-6. `claim-evidence-auditor`
-7. `paper-redteam`
-8. `page-compressor`
+6. `method-writer`
+7. `experiments-writer`
+8. `results-writer`
+9. `discussion-writer`
+10. `limitations-ethics-writer`
+11. `conclusion-writer`
+12. `appendix-writer`
+13. `figure-caption-writer`
+14. `claim-evidence-auditor`
+15. `paper-redteam`
+16. `revision-editor`
+17. `page-compressor`
 
 For an existing draft:
 
@@ -23,7 +32,9 @@ For an existing draft:
 2. `novelty-scout`
 3. `paper-redteam`
 4. section-specific writer skill
-5. `page-compressor`
+5. `figure-caption-writer`
+6. `revision-editor`
+7. `page-compressor`
 
 For reviews/rebuttal:
 
@@ -45,6 +56,15 @@ For reviews/rebuttal:
 | `novelty-scout` | cspapers-assisted novelty and missing-related-work scan | deepened v0.1 |
 | `page-compressor` | length reduction with LaTeX/evidence safety | deepened v0.1 |
 | `rebuttal-planner` | reviewer issue clustering and response strategy | deepened v0.1 |
+| `method-writer` | method section structure, notation, algorithm narrative | added v0.2 |
+| `experiments-writer` | experimental setup, baselines, metrics, reproducibility | added v0.2 |
+| `results-writer` | result narrative, ablations, robustness, table/figure claims | added v0.2 |
+| `discussion-writer` | result interpretation, implications, and evidence-bounded scope | added v0.2 |
+| `limitations-ethics-writer` | limitations, broader impact, medical/data/privacy risks | added v0.2 |
+| `conclusion-writer` | concise conclusion and future-work boundaries | added v0.2 |
+| `appendix-writer` | appendix plan, proof/detail placement, supplement hygiene | added v0.2 |
+| `figure-caption-writer` | captions that state task, signal, conditions, and takeaway | added v0.2 |
+| `revision-editor` | scoped revision plan after reviews or redteam reports | added v0.2 |
 
 ## What A Good Skill Run Should Produce
 

@@ -1,0 +1,19 @@
+name: Template smoke compile
+
+on:
+  workflow_dispatch:
+
+jobs:
+  compile-templates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live smoke-test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y latexmk texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-publishers texlive-science
+
+      - name: Compile imported templates
+        run: python3 scripts/compile_templates.py --check

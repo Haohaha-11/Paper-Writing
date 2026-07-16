@@ -14,19 +14,21 @@
 
 ## v0.2
 
-- Optional lightweight scripts for validation, source checking, template checksum, and cspapers API experiments.
-- GitHub Actions LaTeX compile workflow using `xu-cheng/latex-action`.
-- LaTeX scanner prototype for roots, inputs, bibliographies, figures, style files, and appendices.
-- Full section-writing pack: related work, method, experiments, results, discussion, conclusion, limitations, ethics, appendix.
-- Rebuttal planner and revision editor skills.
-- Internal reviewer workflow with structured comments.
-- Venue rule packs for NeurIPS, ICML, ECCV, AAAI, and arXiv after official template imports are locked.
-- Better citation verification.
+- Landed: lightweight scripts for repository validation, template checksum verification, LaTeX context extraction, and template smoke compilation.
+- Landed: manual GitHub Actions template smoke workflow.
+- Landed: LaTeX scanner prototype for roots, inputs, bibliographies, figures, style/class files, and appendices.
+- Landed: section-writing pack for methods, experiments, results, discussion, conclusion, limitations/ethics, appendix, figure/table captions, and revision editing.
+- Landed: draft-to-submission, existing-draft review, and venue-compliance workflows.
+- Landed: synthetic ICLR, CVPR, and TMI examples.
+- Still open: more detailed current venue rule packs for NeurIPS, ICML, ECCV, AAAI, and arXiv after official rule freshness checks.
+- Still open: citation verification beyond local bibliography/context checks.
 
 ## v0.3
 
-- CLI or package only if the document-first workflow proves stable.
-- Camera-ready workflow.
-- Role-model paper comparison.
+- Compilable synthetic paper fixtures for at least ICLR, CVPR, and TMI.
+- Citation verification workflow with DOI/arXiv/OpenReview/Semantic Scholar cross-checks.
+- Official-source freshness checker for venue rules.
+- Role-model paper comparison workflow.
 - Evaluation fixtures for skill quality and regression.
 - Optional structured conversion via LaTeXML/plasTeX for HTML/XML inspection.
+- CLI or package only if the document-first workflow proves stable.

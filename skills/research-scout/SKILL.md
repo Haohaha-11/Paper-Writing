@@ -18,19 +18,21 @@ Use this skill at the beginning of a project, when the author has a broad topic,
 
 ## Procedure
 
-1. Split the area into research threads, not model families only.
-2. Collect classic papers that define the problem, default assumptions, metrics, and evaluation workflow.
-3. Collect recent papers that represent the current frontier.
-4. For each paper, extract:
+1. Build a question tree using `examples/research-query-tree-template.md`.
+2. Split the area into research threads, not model families only.
+3. Collect classic papers that define the problem, default assumptions, metrics, and evaluation workflow.
+4. Collect recent papers that represent the current frontier.
+5. For each paper, extract:
    - problem addressed;
    - default belief or assumption;
    - diagnostic observation;
    - method idea;
    - evidence type;
    - unresolved boundary.
-5. Build a frontier problem map.
-6. Mark crowded directions, under-tested assumptions, contradictory findings, missing diagnostics, and evaluation weaknesses.
-7. Produce candidate problem seeds for `research-problem-framer`.
+6. Build a frontier problem map.
+7. Mark crowded directions, under-tested assumptions, contradictory findings, missing diagnostics, and evaluation weaknesses.
+8. Tag every observation as source-backed, preliminary-result-backed, domain-expert-backed, hypothesis-only, or unchecked.
+9. Produce candidate problem seeds for `research-problem-framer`.
 
 ## Rubric
 
@@ -53,12 +55,14 @@ Use this skill at the beginning of a project, when the author has a broad topic,
 Return:
 
 - search scope and sources checked;
+- research query tree;
 - classic paper list;
 - recent paper list;
 - frontier problem map;
 - crowded direction list;
 - unresolved assumption list;
 - candidate problem seeds;
+- provenance-tagged observation list;
 - required follow-up searches.
 
 ## Common Failure Modes

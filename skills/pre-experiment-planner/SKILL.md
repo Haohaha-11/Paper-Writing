@@ -22,8 +22,10 @@ Use this skill after `research-problem-framer` locks or revises a candidate prob
 3. Add controls for trivial explanations, leakage, dataset identity, tuning, parameter count, and label prevalence when relevant.
 4. Define the result that supports the problem and the result that kills it.
 5. Define stopping rules before running the tests.
-6. Map positive outcomes to method-design requirements.
-7. Map negative outcomes to revise/kill decisions.
+6. Record every run in `examples/pre-experiment-ledger-template.md`.
+7. Map positive outcomes to method-design requirements.
+8. Map negative outcomes to revise/kill decisions.
+9. Reflect on what each result supports and what it does not support before moving to method design.
 
 ## Rubric
 
@@ -51,6 +53,8 @@ Return:
 - success and kill criteria;
 - controls and matched baselines;
 - decision tree after results;
+- experiment ledger;
+- reflection table;
 - risks that remain for main experiments.
 
 ## Common Failure Modes

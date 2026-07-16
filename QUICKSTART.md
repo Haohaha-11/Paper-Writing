@@ -15,9 +15,9 @@ Use this repo as a paper-writing operating manual.
 
 ## Idea Development
 
-1. Fill `examples/frontier-problem-map-template.md` while running `skills/research-scout/SKILL.md`.
-2. Fill `examples/research-problem-framing-template.md` while running `skills/research-problem-framer/SKILL.md`.
-3. Fill `examples/falsification-sprint-template.md` while running `skills/pre-experiment-planner/SKILL.md`.
+1. Fill `examples/research-query-tree-template.md` and `examples/frontier-problem-map-template.md` while running `skills/research-scout/SKILL.md`.
+2. Fill `examples/idea-bank-template.md` and `examples/research-problem-framing-template.md` while running `skills/research-problem-framer/SKILL.md`.
+3. Fill `examples/falsification-sprint-template.md` and `examples/pre-experiment-ledger-template.md` while running `skills/pre-experiment-planner/SKILL.md`.
 4. Continue to `workflows/draft-to-submission.md` only after the problem survives falsification.
 
 ## Existing Draft

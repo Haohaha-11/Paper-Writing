@@ -22,10 +22,13 @@ Use this skill after an initial literature scan and before investing in method d
 2. Score each candidate from 0 to 3 on all rubric dimensions.
 3. Reject or revise candidates with any critical dimension below 2.
 4. Require at least one score of 3 in violated assumption, falsifiability, or novelty boundary before recommending a primary direction.
-5. Build a candidate comparison table.
-6. Write the problem statement, novelty boundary, and non-claim for the best candidate.
-7. Design a falsification sprint before method design.
-8. Anticipate reviewer attacks and map each one to a control, baseline, or wording boundary.
+5. Build an idea bank using `examples/idea-bank-template.md`.
+6. Build a candidate comparison table.
+7. Write the problem statement, novelty boundary, and non-claim for the best candidate.
+8. Design a falsification sprint before method design.
+9. Apply provenance gates: unchecked observations cannot become paper claims.
+10. Run multi-perspective critique from closest-work, feasibility, mechanism, reviewer-attack, venue-fit, and domain/ethics perspectives.
+11. Anticipate reviewer attacks and map each one to a control, baseline, or wording boundary.
 
 ## Candidate Scoring Rubric
 
@@ -159,6 +162,7 @@ Anticipate these before locking a problem:
 Return:
 
 - scored candidate table;
+- idea bank and decision records;
 - frontier problem map;
 - candidate comparison table;
 - locked/revised/killed decision for each candidate;
@@ -166,6 +170,8 @@ Return:
 - novelty boundary and non-claim;
 - falsification sprint plan;
 - anticipated reviewer attacks and defenses;
+- provenance-gated claim list;
+- multi-perspective critique summary;
 - decision on whether to proceed to method design.
 
 ## Sources Reviewed

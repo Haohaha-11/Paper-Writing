@@ -63,6 +63,8 @@ This file tracks what has been landed in the GitHub-native version of the projec
 - [x] Added `research-problem-framer` based on the Research Problem Rubric and Templates.
 - [x] Added `pre-experiment-planner` for falsification sprints before method design.
 - [x] Added `idea-to-paper` workflow from literature research to problem focusing, pre-experiments, method design, experiments, and writing.
+- [x] Added research-ideation distillation notes from related open-source projects.
+- [x] Added query-tree, idea-bank, and pre-experiment-ledger templates.
 
 ## Still Pending
 

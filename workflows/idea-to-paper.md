@@ -23,7 +23,7 @@ Move from a broad research direction to a defensible paper plan through literatu
 
 ## Stage 1: Latest And Classic Papers
 
-Run `research-scout`.
+Run `research-scout` and fill `examples/research-query-tree-template.md` plus `examples/frontier-problem-map-template.md`.
 
 Outputs:
 
@@ -37,7 +37,7 @@ Do not generate final paper ideas before this map exists.
 
 ## Stage 2: Focus The Problem
 
-Run `research-problem-framer`.
+Run `research-problem-framer` and fill `examples/idea-bank-template.md` plus `examples/research-problem-framing-template.md`.
 
 Required outputs:
 
@@ -58,7 +58,7 @@ Decision rule:
 
 ## Stage 3: Pre-Experiments
 
-Run `pre-experiment-planner`, then execute the sprint outside this repository.
+Run `pre-experiment-planner`, fill `examples/falsification-sprint-template.md`, and maintain `examples/pre-experiment-ledger-template.md`; then execute the sprint outside this repository.
 
 Each pre-experiment must answer at least one of:
 

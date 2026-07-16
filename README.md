@@ -165,6 +165,7 @@ Near-term work:
 - finish AAAI-26 template import once an accessible official artifact is available;
 - import exact IEEE/TMI template selector artifacts;
 - add more filled examples using synthetic toy papers;
+- extend idea-stage distillation and templates from `docs/research-ideation-distillation.md`;
 - expand citation verification and official-source freshness checks.
 
 See `ROADMAP.md`.

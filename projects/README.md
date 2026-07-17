@@ -33,7 +33,9 @@ projects/
 3. Select the target venue under `venues/`.
 4. Run `workflows/draft-to-submission.md` for a new paper or `workflows/review-existing-draft.md` for an existing draft.
 5. Use `scripts/extract_latex_context.py projects/<paper-name>` before asking an agent to review or edit a LaTeX project.
-6. Keep generated reports inside the local project unless they are synthetic or intentionally public.
+6. Compile with `latexmk -pdf main.tex` from inside the project directory.
+7. The PDF will be written next to the root `.tex` file unless you set a custom output directory.
+8. Keep generated reports inside the local project unless they are synthetic or intentionally public.
 
 ## Do Not Commit
 

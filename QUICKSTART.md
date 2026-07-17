@@ -2,25 +2,27 @@
 
 Use this repo as a paper-writing operating manual.
 
-## New Paper
+## 1. If You Need An Idea
+
+1. Fill `examples/research-query-tree-template.md`.
+2. Fill `examples/frontier-problem-map-template.md`.
+3. Fill `examples/idea-bank-template.md`.
+4. Fill `examples/research-problem-framing-template.md`.
+5. Fill `examples/falsification-sprint-template.md`.
+6. Fill `examples/pre-experiment-ledger-template.md`.
+7. Follow `workflows/idea-to-paper.md`.
+
+## 2. If The Problem Is Locked
 
 1. Fill `examples/paper-context-template.md`.
 2. Read the target venue folder under `venues/`.
-3. If the problem is still open, run `workflows/idea-to-paper.md`.
-4. If the problem is locked, run `workflows/draft-to-submission.md`.
-5. Use `skills/paper-strategist/SKILL.md`.
-6. Use `skills/novelty-scout/SKILL.md` before strong novelty claims.
-7. Use `skills/claim-evidence-auditor/SKILL.md` before abstract/introduction finalization.
-8. Use `skills/paper-redteam/SKILL.md` before submission.
+3. Follow `workflows/draft-to-submission.md`.
+4. Use `skills/paper-strategist/SKILL.md`.
+5. Use `skills/novelty-scout/SKILL.md` before strong novelty claims.
+6. Use `skills/claim-evidence-auditor/SKILL.md` before finalizing the abstract and introduction.
+7. Use `skills/paper-redteam/SKILL.md` before submission.
 
-## Idea Development
-
-1. Fill `examples/research-query-tree-template.md` and `examples/frontier-problem-map-template.md` while running `skills/research-scout/SKILL.md`.
-2. Fill `examples/idea-bank-template.md` and `examples/research-problem-framing-template.md` while running `skills/research-problem-framer/SKILL.md`.
-3. Fill `examples/falsification-sprint-template.md` and `examples/pre-experiment-ledger-template.md` while running `skills/pre-experiment-planner/SKILL.md`.
-4. Continue to `workflows/draft-to-submission.md` only after the problem survives falsification.
-
-## Existing Draft
+## 3. If You Already Have A Draft
 
 1. Fill any missing context in `examples/paper-context-template.md`.
 2. Select the target venue checklist.
@@ -28,15 +30,15 @@ Use this repo as a paper-writing operating manual.
 4. Apply section-specific skills from `skills/`.
 5. Record unresolved risks in the review report.
 
-## Local Private Projects
+## 4. Local Private Projects
 
 1. Put real unpublished paper projects under `projects/<paper-name>/`.
 2. Keep `projects/` contents local; this repository ignores real project files by default.
-3. Copy `examples/paper-context-template.md` into the local project.
-4. Run `scripts/extract_latex_context.py projects/<paper-name>` before asking an agent to inspect a LaTeX draft.
-5. Move only synthetic, sanitized examples into `examples/` for public sharing.
+3. Run `scripts/extract_latex_context.py projects/<paper-name>` before asking an agent to inspect a LaTeX draft.
+4. Compile locally with `latexmk -pdf main.tex` inside the project directory.
+5. The PDF appears next to your main `.tex` file unless you change the output path.
 
-## Rebuttal
+## 5. Rebuttal
 
 1. Paste reviews into `examples/rebuttal-response-template.md`.
 2. Use `skills/rebuttal-planner/SKILL.md`.

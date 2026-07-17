@@ -1,181 +1,119 @@
 # Paper-Writing-Hao
 
-A GitHub-native research paper writing system for authors and AI agents.
+GitHub-native paper writing system for authors and AI agents.
 
-Paper-Writing-Hao collects paper-writing skills, venue rules, review workflows, template provenance, and reusable artifacts for writing and polishing papers for arXiv, ICLR, NeurIPS, CVPR, ICML, ECCV, AAAI, and IEEE TMI.
+This repo helps you move from literature research to a locked research problem, then into drafting, review, revision, and venue-specific polishing for arXiv, ICLR, NeurIPS, CVPR, ICML, ECCV, AAAI, and IEEE TMI.
 
-It is not a one-click paper generator. The goal is to help researchers produce clearer, better-grounded, venue-aware manuscripts while keeping humans responsible for claims, evidence, citations, and final edits.
+It is not a one-click paper generator. It is a reusable writing system, review system, and local LaTeX workspace.
 
-## What This Project Provides
+## What Is Ready
 
-- Agent-readable writing skills for research scouting, problem framing, pre-experiment planning, strategy, abstracts, introductions, related work, methods, experiments, results, discussion, limitations/ethics, conclusions, appendices, captions, evidence checks, reviewer simulation, novelty scouting, revision, compression, and rebuttal planning.
+- Research scouting and problem framing for idea generation.
+- Section-writing skills for abstracts, introductions, related work, methods, experiments, results, discussion, limitations, conclusions, appendices, and captions.
+- Review skills for claim evidence, novelty, redteam simulation, and revision planning.
 - Venue rule folders for ICLR, CVPR, NeurIPS, ICML, ECCV, AAAI, IEEE TMI, and arXiv.
-- Imported and checksummed LaTeX templates for major ML/CV venues.
-- Real compile validation using TeX Live and `latexmk`.
-- Structured workflows for idea-to-paper development, draft-to-submission writing, full-paper writing, section rewrites, venue compliance review, pre-submission review, rebuttal, camera-ready preparation, and arXiv export.
-- Reusable templates for paper context, claim-evidence matrices, review reports, rebuttal responses, and cspapers-assisted related-work checks.
-- Lightweight scripts for repository validation, LaTeX project scanning, and template smoke compilation.
+- Imported official template bundles with checksums and import records.
+- Local TeX Live compilation and template smoke validation.
+- Synthetic examples and walkthroughs.
+- Local/private paper project support under `projects/`.
 
-## Current Status
+## How To Use
 
-This repository is document-first. It is designed to be read and executed by humans, Claude Code, Codex, Cursor, ChatGPT, or similar coding/research agents.
+### 1. If you are still looking for an idea
 
-There is no CLI or web app. The project is a GitHub-native knowledge base and workflow pack by design.
+Start with:
 
-Verified locally on 2026-07-15:
+1. `workflows/idea-to-paper.md`
+2. `skills/research-scout/SKILL.md`
+3. `skills/research-problem-framer/SKILL.md`
+4. `skills/pre-experiment-planner/SKILL.md`
 
-| Target | Status |
-|---|---|
-| ICLR 2026 template | imported, checksummed, compile pass |
-| CVPR 2026 author kit | imported, checksummed, compile pass |
-| NeurIPS 2026 template | imported, checksummed, compile pass |
-| ICML 2026 template | imported, checksummed, compile pass |
-| ECCV 2026 template | imported, checksummed, compile pass |
-| IEEE TMI / IEEEtran minimal example | compile pass |
-| AAAI-26 author kit | not imported yet; official link was blocked by Cloudflare in this environment |
+Use the templates in `examples/` to keep the search, problem selection, and falsification sprint structured.
 
-See `templates/compile-validation.md`, `templates/import-log.md`, and `IMPLEMENTATION_STATUS.md`.
+### 2. If your problem is already locked
 
-## Quickstart
+Start with:
 
-For a new paper:
+1. `workflows/draft-to-submission.md`
+2. `skills/paper-strategist/SKILL.md`
+3. `skills/novelty-scout/SKILL.md`
+4. `skills/claim-evidence-auditor/SKILL.md`
+5. `skills/paper-redteam/SKILL.md`
 
-1. Fill `examples/paper-context-template.md`.
-2. Read the target venue folder under `venues/`.
-3. If the research problem is not locked, follow `workflows/idea-to-paper.md`.
-4. If the research problem is already locked, follow `workflows/draft-to-submission.md`.
-5. Use `skills/paper-strategist/SKILL.md` to define the paper thesis and contribution map.
-6. Use `skills/novelty-scout/SKILL.md` before making strong novelty claims.
-7. Use `skills/claim-evidence-auditor/SKILL.md` before finalizing the abstract and introduction.
-8. Use `skills/paper-redteam/SKILL.md` before submission.
+### 3. If you have a real paper project
 
-For an existing draft:
+Put it under:
 
-1. Fill missing facts in `examples/paper-context-template.md`.
-2. Select the venue checklist.
-3. Follow `workflows/review-existing-draft.md`.
-4. Apply the relevant skills from `skills/`.
-5. Record unresolved risks in `examples/review-report-template.md`.
+```text
+projects/<paper-name>/
+```
 
-For synthetic walkthroughs, see:
+Compile from that folder with `latexmk`. The resulting PDF will sit next to your main `.tex` file unless you choose a custom output path.
 
-- `examples/toy_ml_paper/`
-- `examples/toy_iclr_paper/`
-- `examples/toy_cvpr_paper/`
-- `examples/toy_tmi_paper/`
+## Local Project Workflow
+
+For a paper project in `projects/my-paper/`:
+
+```bash
+cd /Hao/Paper-Writing-Hao/projects/my-paper
+latexmk -pdf main.tex
+```
+
+Use `scripts/extract_latex_context.py` before asking an agent to inspect or edit the LaTeX tree.
 
 ## Repository Map
 
 ```text
 Paper-Writing-Hao/
-  AGENTS.md                 # Instructions for AI agents
-  QUICKSTART.md             # Short usage guide
-  IMPLEMENTATION_STATUS.md  # What is landed and what remains pending
-  CONTRIBUTING.md           # Contribution guidelines
-  THIRD_PARTY.md            # Third-party sources and template provenance notes
-  skills/                   # Writing and review skills
-  venues/                   # Venue rules, checklists, and official sources
-  workflows/                # End-to-end writing and review workflows
-  templates/                # Imported templates, checksums, provenance records
-  examples/                 # Reusable paper/review/rebuttal artifacts
-  projects/                 # Local/private paper projects; ignored by default
-  docs/                     # Design notes and research records
+  skills/        writing, review, and ideation skills
+  workflows/     end-to-end paper workflows
+  venues/        official-source venue rules and checklists
+  templates/     imported template bundles and provenance
+  examples/      synthetic templates and walkthroughs
+  projects/      local/private paper projects
+  docs/          design notes, distillation notes, and environment docs
 ```
 
-## Core Principles
-
-1. Evidence before polish.
-   Every strong claim should be backed by an experiment, citation, derivation, design constraint, or clearly stated assumption.
-
-2. Venue rules must come from official sources.
-   Third-party summaries are useful hints, not authority.
-
-3. Suggestions before edits.
-   Agents should produce reports or patch suggestions before changing paper text.
-
-4. No hallucinated citations.
-   Citation-changing work must report provenance.
-
-5. No detector-evasion workflows.
-   This project supports clarity, evidence, and scholarly voice, not "humanizer" or AIGC-detector bypass features.
-
-## Key Skills
-
-- `research-scout`: latest/classic paper mapping and frontier problem map.
-- `research-problem-framer`: candidate scoring, contradiction framing, novelty boundary, and falsification sprint.
-- `pre-experiment-planner`: decisive pre-experiments before method design.
-- `paper-strategist`: paper thesis, contribution map, section plan.
-- `abstract-writer`: evidence-grounded abstract drafting and revision.
-- `introduction-writer`: motivation, gap, insight, and contribution framing.
-- `related-work-writer`: citation-grounded positioning.
-- `method-writer`: method structure, notation, algorithms, and mechanism clarity.
-- `experiments-writer`: setup, datasets, baselines, metrics, and reproducibility.
-- `results-writer`: result narrative, ablations, robustness, and evidence claims.
-- `discussion-writer`: evidence-bounded interpretation and implications.
-- `limitations-ethics-writer`: limitations, broader impact, privacy, and deployment boundaries.
-- `conclusion-writer`: concise contribution recap and future-work boundaries.
-- `appendix-writer`: appendix structure and supplement hygiene.
-- `figure-caption-writer`: evidence-grounded captions for figures and tables.
-- `claim-evidence-auditor`: claim-to-evidence matrix.
-- `paper-redteam`: simulated reviewer and AC review.
-- `novelty-scout`: related-work and novelty risk search, including cspapers-assisted checks.
-- `revision-editor`: ranked revision plan after review or audit.
-- `page-compressor`: length reduction while preserving LaTeX and evidence.
-- `rebuttal-planner`: response strategy and revision planning.
-
-See `skills/README.md`.
-
-## Templates And TeX Environment
+## Templates And Environment
 
 Imported template files live under `templates/upstream/`.
 
-Important metadata:
+Important files:
 
 - `templates/import-manifest.json`
 - `templates/checksums.sha256`
 - `templates/import-records/`
 - `templates/compile-validation.md`
-
-The local validation environment uses Ubuntu 24.04, TeX Live 2023/Debian, and `latexmk` 4.83. See `docs/tex-environment.md`.
+- `docs/tex-environment.md`
 
 Useful checks:
 
 ```bash
 python3 scripts/validate_repo.py
 sha256sum -c templates/checksums.sha256
-python3 scripts/extract_latex_context.py templates/upstream/iclr/2026
 python3 scripts/compile_templates.py --check
 ```
 
-## Safety And Scope
+## Current Limits
 
-This project handles unpublished research material. Use it carefully.
+- This repo does not provide an Overleaf-style web editor.
+- AAAI-26 template import is still pending because the official kit was not accessible from this environment.
+- Exact official IEEE/TMI template selector artifacts are still pending; current validation uses TeX Live IEEEtran.
 
+## Safety
+
+- Keep unpublished manuscripts local or in a private repository.
 - Do not paste confidential drafts into untrusted services.
-- Do not let agents invent experimental results or citations.
-- Do not claim official venue compliance without checking the relevant venue source.
+- Do not invent citations, datasets, metrics, or venue rules.
+- Do not claim venue compliance without checking the official source.
 - Do not silently update official templates in existing paper projects.
-- Do not treat search relevance as a review score or acceptance predictor.
-- Put real paper projects under `projects/` only for local work. The directory ignores real project contents by default; see `projects/README.md`.
-
-## Roadmap
-
-Near-term work:
-
-- finish AAAI-26 template import once an accessible official artifact is available;
-- import exact IEEE/TMI template selector artifacts;
-- add more filled examples using synthetic toy papers;
-- extend idea-stage distillation and templates from `docs/research-ideation-distillation.md`;
-- expand citation verification and official-source freshness checks.
-
-See `ROADMAP.md`.
 
 ## Contributing
 
 Contributions are welcome, especially:
 
 - new venue rule files backed by official sources;
-- improved writing skills with clear output contracts;
+- clearer writing skills with explicit output contracts;
 - corrected template provenance or checksums;
 - synthetic examples that do not reveal unpublished work;
 - review workflows for specific paper types.
